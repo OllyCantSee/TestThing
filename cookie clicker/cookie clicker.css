@@ -64,6 +64,6 @@ body {
   .back:active {
     background-color: #555555;
     color: whitesmoke;
-    transform: scale(1); /* Change the size when hovered */
+    transform: scale(1.1); /* Change the size when hovered */
     box-shadow: none
   }
