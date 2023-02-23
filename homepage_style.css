@@ -58,7 +58,7 @@ body {
   button:active {
     background-color: #628acc;
     color: whitesmoke;
-    transform: scale(1); /* Change the size when hovered */
+    transform: scale(1.1); /* Change the size when hovered */
   }
 
   .container {
