@@ -79,4 +79,9 @@ body {
       height: 100px;
     }
     
+    #game-container {
+    width: 75%;
+    height: 75%;
+  }
+    
   
