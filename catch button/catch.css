@@ -18,6 +18,22 @@ body {
     text-align: center;
   }
 
+   button {
+    background-color: #82b1ff;
+    border: none;
+    color: white;
+    padding: 40px 60px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px; /* Add border-radius property */
+    transition: transform 0.4s; /* Add transition property for smooth animation */
+    box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2); /* Add box-shadow property */
+  }
+
   .back {
   background-color: #494949;
     border: none;
