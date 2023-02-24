@@ -71,4 +71,12 @@ body {
       transform: scale(1.5);
     }
   }
+
+@media only screen and (max-width: 1000px) {
+    /* Change the padding, font-size, and margin for smaller screens */
+    #dot {
+      width: 35px;
+      height: 35px;
+    }
+    
   
