@@ -35,7 +35,7 @@ body {
     box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1200px) {
     /* Change the padding, font-size, and margin for smaller screens */
     body {
       margin-left: 8%;
