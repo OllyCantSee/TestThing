@@ -129,7 +129,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 400px) {
   /* Change the padding, font-size, and margin for smaller screens */
   #dot {
     width: 75px;
