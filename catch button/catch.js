@@ -5,7 +5,7 @@ var clickSound = document.getElementById("click-sound");
 var timeLeftElem = document.getElementById("time-remaining-count"); // update ID here
 
 var timeLeft = 3; // set the initial time left to 3 seconds
-var timerId = setInterval(countdown, 800); // start the countdown timer
+var timerId = setInterval(countdown, 850); // start the countdown timer
 
 function randomPosition() {
   var container = document.getElementById("game-container");
@@ -13,6 +13,18 @@ function randomPosition() {
   var x = Math.floor(Math.random() * (containerRect.width - 20));
   var y = Math.floor(Math.random() * (containerRect.height - 20));
   return { x: x, y: y };
+}
+
+function resetDot() {
+
+var gameContainer = document.getElementById("game-container");
+var initialX =
+  gameContainer.offsetWidth / 2 - dot.offsetWidth / 2;
+var initialY =
+  gameContainer.offsetHeight / 2 - dot.offsetHeight / 2;
+dot.style.left = initialX + "px";
+dot.style.top = initialY + "px";
+
 }
 
 function updateDotPosition() {
@@ -32,6 +44,8 @@ function countdown() {
     
     var loseSound = new Audio("lose.mp3"); // create a new Audio object with the lose.mp3 file
     loseSound.play(); // play the lose.mp3 file
+
+    resetDot(); //cakls reset dot
   }
 }
 
@@ -44,15 +58,13 @@ function handleClick() {
     dot.classList.remove("trail");
   }, 100);
   clickSound.play(); // play sound on click
-  timeLeft = 4; // reset the timer
+  timeLeft = 3; // reset the timer
 }
 
 dot.addEventListener("click", handleClick);
 
-var dot = document.getElementById("dot");
-var gameContainer = document.getElementById("game-container");
-
 // Set the initial position of the dot to the center of the game area
+var gameContainer = document.getElementById("game-container");
 var initialX =
   gameContainer.offsetWidth / 2 - dot.offsetWidth / 2;
 var initialY =
