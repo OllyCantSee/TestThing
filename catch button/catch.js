@@ -4,7 +4,7 @@ var scoreCountElem = document.getElementById("score-count");
 var clickSound = document.getElementById("click-sound");
 var timeLeftElem = document.getElementById("time-remaining-count"); // update ID here
 
-var timeLeft = 4; // set the initial time left to 4 seconds
+var timeLeft = 3; // set the initial time left to 3 seconds
 var timerId = setInterval(countdown, 800); // start the countdown timer
 
 function randomPosition() {
