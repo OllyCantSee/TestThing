@@ -129,7 +129,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   /* Change the padding, font-size, and margin for smaller screens */
   #dot {
     width: 50px;
@@ -146,7 +146,7 @@ span {
   }
 
   h1{
-    font-size: 75px;
+    font-size: 100px;
   }
 
 }
