@@ -86,6 +86,7 @@ button:active {
   cursor: pointer;
   transition: opacity 0.75s, left 0.75s, top 0.75s;
   box-shadow: 0 0 50px #82b1ff;
+  z-index: 1000;
 }
 
 #score {
