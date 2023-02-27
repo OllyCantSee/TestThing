@@ -44,6 +44,10 @@ function countdown() {
     
     var loseSound = new Audio("lose.mp3"); // create a new Audio object with the lose.mp3 file
     loseSound.play(); // play the lose.mp3 file
+    
+  if (score >= 10) {
+    timeLeft = 2
+}
 
     resetDot(); //cakls reset dot
   }
